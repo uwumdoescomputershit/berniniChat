@@ -1,0 +1,29 @@
+Tutorial um BerniniChat für MACOS zu compilen.
+
+Sie brauchen den compiler gcc hierfür. Um diesen auf MACOS zu erhalten müssen sie homebrew verwenden.
+Um Homebrew zu installieren, gehen sie zu https://brew.sh/ und kopieren sie den auf der Website stehenden command in ihr Terminal.
+
+Wenn die Homebrew installation abgeschlossen ist, können wir anfangen die Dependencies, für BerniniChat zu installieren.
+Geben sie erst in ihr Terminal ein:
+
+brew install gcc
+
+danach:
+
+brew install nlohmann-json
+
+Laden sie sich nun die Dateien server.cpp und serverConf.json herunter und speichern sie diese im gleichen Ordner auf ihrem Computer.
+(Auf github auf den Namen klicken und dann auf das Download symbol rechts oben.)
+
+Nun öffnen Sie ein Terminal in dem Ordner, in dem server.cpp und serverConf.json enthalten sind.
+Geben sie hier den command ein:
+gcc server.cpp -o BerniniChat -lstdc++ -lssl -lcrypto
+
+Wenn dieser command fertig ist, müssen sie die Datei serverConf.json bearbeiten. Relevant ist hier die Zeile openAiKey, die restlichen sind in meiner schriftlichen Abgabe beschrieben.
+Diese kann aus Sicherheitsgründen nicht öffentlich gespeichert werden. Sie brauchen nicht ihren eigenen, schicken sie mir einfach eine Mail
+und ich schicke ihnen meinen. Dieser muss dann einfach zwischen den Gänsefüsschen bei "hier openAiKey Einfügen" eingefügt werden.
+
+Nun sollten sie im Terminal (immernoch innerhalb des Ordners) mit dem command "./BerniniChat" BerniniChat starten können.
+
+Wenn probleme auftreten, oder wenn sie noch fragen haben, 
+schicken sie mir eine Mail unter <elliot.terrell@proton.me> (dort bin ich besser errreichbar als Schulmail).
