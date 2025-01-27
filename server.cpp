@@ -71,14 +71,14 @@ json generateChatGPTPayload(const string& previousResponse, const string& userIn
 }
 
 void printBanner() {
-  cout << " /$$$$$$$                                /$$           /$$  /$$$$$$  /$$                   /$$     \n";
-  cout << "| $$__  $$                              |__/          |__/ /$$__  $$| $$                  | $$     \n";
-  cout << "| $$  \\ $$  /$$$$$$   /$$$$$$  /$$$$$$$  /$$ /$$$$$$$  /$$| $$  \\__/| $$$$$$$   /$$$$$$  /$$$$$$   \n";
-  cout << "| $$$$$$$  /$$__  $$ /$$__  $$| $$__  $$| $$| $$__  $$| $$| $$      | $$__  $$ |____  $$|_  $$_/   \n";
-  cout << "| $$__  $$| $$$$$$$$| $$  \\__/| $$  \\ $$| $$| $$  \\ $$| $$| $$      | $$  \\ $$  /$$$$$$$  | $$     \n";
-  cout << "| $$  \\ $$| $$_____/| $$      | $$  | $$| $$| $$  | $$| $$| $$    $$| $$  | $$ /$$__  $$  | $$ /$$ \n";
-  cout << "| $$$$$$$/|  $$$$$$$| $$      | $$  | $$| $$| $$  | $$| $$|  $$$$$$/| $$  | $$|  $$$$$$$  |  $$$$/ \n";
-  cout << "|_______/  \\_______/|__/      |__/  |__/|__/|__/  |__/|__/ \\______/ |__/  |__/ \\_______/   \\___/   \n \n \n \n \n";
+  cout << " /$$$$$$$                       /$$       /$$  /$$$$$$  /$$                   /$$    \n";
+  cout << "| $$__  $$                     |__/      | $$ /$$__  $$| $$                  | $$    \n";
+  cout << "| $$  \\ $$  /$$$$$$  /$$    /$$ /$$  /$$$$$$$| $$  \\__/| $$$$$$$   /$$$$$$  /$$$$$$  \n";
+  cout << "| $$  | $$ |____  $$|  $$  /$$/| $$ /$$__  $$| $$      | $$__  $$ |____  $$|_  $$_/  \n";
+  cout << "| $$  | $$  /$$$$$$$ \\  $$/$$/ | $$| $$  | $$| $$      | $$  \\ $$  /$$$$$$$  | $$    \n";
+  cout << "| $$  | $$ /$$__  $$  \\  $$$/  | $$| $$  | $$| $$    $$| $$  | $$ /$$__  $$  | $$ /$$\n";
+  cout << "| $$$$$$$/|  $$$$$$$   \\  $/   | $$|  $$$$$$$|  $$$$$$/| $$  | $$|  $$$$$$$  |  $$$$/\n";
+  cout << "|_______/  \\_______/    \\_/    |__/ \\_______/ \\______/ |__/  |__/ \\_______/   \\___/   \n \n \n \n \n";
 }
 
 int main() {
@@ -87,7 +87,7 @@ int main() {
   configFile.open("serverConf.json", ifstream::binary);
   json config = json::parse(configFile);
   printBanner();
-  cout << "Hallo! Wilkommen zu meinem Kunstproject BerniniChat. \n \n Sie können nun mit David schreiben!";
+  cout << "Hallo! Wilkommen zu meinem Kunstprojekt DavidChat. \n \n Sie können nun mit David schreiben!";
   openAiKey = config["openAiKey"];
   systemPrompt = config["systemPrompt"];
   model = config["model"];
