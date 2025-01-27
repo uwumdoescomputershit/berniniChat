@@ -1,4 +1,4 @@
-Tutorial um BerniniChat für MACOS zu compilen.
+Tutorial um DavidChat für MACOS zu compilen.
 
 Sie brauchen den compiler gcc hierfür. Um diesen auf MACOS zu erhalten müssen sie homebrew verwenden.
 Um Homebrew zu installieren, gehen sie zu https://brew.sh/ und kopieren sie den auf der Website stehenden command in ihr Terminal.
@@ -17,14 +17,13 @@ Laden sie sich nun die Dateien server.cpp und serverConf.json herunter und speic
 
 Nun öffnen Sie ein Terminal in dem Ordner, in dem server.cpp und serverConf.json enthalten sind.
 Geben sie hier den command ein:
-gcc server.cpp -o BerniniChat -lstdc++ -lssl -lcrypto
+gcc server.cpp -o DavidChat -lstdc++ -lssl -lcrypto
 
 Wenn dieser command fertig ist, müssen sie die Datei serverConf.json bearbeiten. Relevant ist hier die Zeile openAiKey, die restlichen sind in meiner schriftlichen Abgabe beschrieben.
 Diese kann aus Sicherheitsgründen nicht öffentlich gespeichert werden. Sie brauchen nicht ihren eigenen, schicken sie mir einfach eine Mail
 und ich schicke ihnen meinen. Dieser muss dann einfach zwischen den Gänsefüsschen bei "hier openAiKey Einfügen" eingefügt werden.
 
-Nun sollten sie im Terminal (immernoch innerhalb des Ordners) mit dem command "./BerniniChat" BerniniChat starten können.
-Ich empfehle BerniniChat im Vollbild-Modus zu verwenden.
+Nun sollten sie im Terminal (immernoch innerhalb des Ordners) mit dem command "./DavidChat" DavidChat starten können.
 
 Wenn probleme auftreten, oder wenn sie noch fragen haben, 
 schicken sie mir eine Mail unter <elliot.terrell@proton.me> (dort bin ich besser errreichbar als Schulmail).
